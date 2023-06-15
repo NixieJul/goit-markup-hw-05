@@ -846,6 +846,7 @@ cursor: pointer;
 .input-svg {
   transition: fill var(--transition);
   position: relative;
+  transition: var(--transition);
 }
 
 .input-icon {
@@ -890,6 +891,7 @@ color: #8E8F99;
 display: flex;
 align-items: center;
 margin-bottom: 24px;
+
 }
 
 .check-link {
@@ -906,12 +908,14 @@ margin-bottom: 24px;
   align-items: center;
   justify-content: center;
   fill: transparent;
+  transition: var(--transition);
 }
 
 .input-check:checked + .check-label span {
   background-color: var(--primary-brand);
   border: 1px solid var(--primary-brand);
   fill: var(--light);
+  
 }
 
 .form-bt {
