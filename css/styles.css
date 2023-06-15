@@ -79,7 +79,7 @@ img {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   margin-left: 0 auto;
-  }
+}
 
 .header-container {
   display: flex;
@@ -564,7 +564,7 @@ img {
 .footer-form {
   display: flex;
   flex-direction: row;
-      align-items: end;
+  align-items: end;
   gap: 24px;
 }
 
@@ -575,28 +575,28 @@ img {
 
 .footer-label {
   font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #FFFFFF;
-margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
 }
 
 .footer-input {
   font-size: 12px;
-line-height: 2;
-letter-spacing: 0.04em;
-width: 264px;
-height: 40px;
-padding-left: 16px;
-background-color: transparent;
-border: 1px solid #FFFFFF;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  width: 264px;
+  height: 40px;
+  padding-left: 16px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
 }
 
 .footer-input::placeholder {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .sub-btn {
@@ -606,16 +606,15 @@ border-radius: 4px;
   align-items: center;
   justify-content: center;
   background: var(--primary-brand);
-border-radius: 4px;
-border: none;
-color: #FFFFFF;
-cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .subscribe-icon {
   margin-left: 16px;
 }
-
 
 /*!-----------PORTFOLIO-------------*/
 
@@ -882,16 +881,14 @@ cursor: pointer;
   color: #8e8f99;
 }
 
-
 .check-label {
-font-size: 12px;
-line-height: 1.17;
-letter-spacing: 0.04em;
-color: #8E8F99;
-display: flex;
-align-items: center;
-margin-bottom: 24px;
-
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
 }
 
 .check-link {
@@ -915,25 +912,24 @@ margin-bottom: 24px;
   background-color: var(--primary-brand);
   border: 1px solid var(--primary-brand);
   fill: var(--light);
-  
 }
 
 .form-bt {
   font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-align-items: center;
-justify-content: center;
-letter-spacing: 0.04em;
-color: #FFFFFF;
-width: 169px;
-height: 56px;
-background-color: var(--primary-brand);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-border: none;
-margin-right: 120px;
-display: block;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  width: 169px;
+  height: 56px;
+  background-color: var(--primary-brand);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  margin-right: 120px;
+  display: block;
   margin-right: auto;
   margin-left: auto;
 }
