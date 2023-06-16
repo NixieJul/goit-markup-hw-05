@@ -556,62 +556,62 @@ img {
 }
 
 .subsribe {
-  display: flex;
-  align-items: center;
   margin-left: 80px;
-}
-
-.footer-form {
   display: flex;
-  flex-direction: row;
-  align-items: end;
-  gap: 24px;
+  justify-content: center;
 }
 
 .foot-div {
-  display: flex;
-  flex-direction: column;
 }
 
-.footer-label {
+.subsribe-text {
+  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 16px;
+}
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+.footer-label {
 }
 
 .footer-input {
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
   width: 264px;
   height: 40px;
-  padding-left: 16px;
-  background-color: transparent;
   border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  color: #ffffff;
 }
-
 .footer-input::placeholder {
   color: #ffffff;
 }
 
 .sub-btn {
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  background: var(--primary-brand);
-  border-radius: 4px;
-  border: none;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   color: #ffffff;
+  background: var(--primary-brand);
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
-
 .subscribe-icon {
   margin-left: 16px;
 }
@@ -814,20 +814,22 @@ img {
   line-height: 1, 5;
   text-align: center;
   letter-spacing: 0.02em;
-  columns: var(--dark);
+  color: var(--dark);
   margin-bottom: 16px;
 }
 
+.name-div {
+  margin-bottom: 8px;
+}
+
 .form-input {
-  width: 360px;
+  width: 100%;
   height: 40px;
   background-color: transparent;
   outline: transparent;
-  margin-bottom: 8px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding-left: 38px;
-  display: block;
   transition: border-color var(--transition);
 }
 
@@ -840,6 +842,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--suble-text);
+  display: block;
+  margin-bottom: 4px;
 }
 
 .input-svg {
@@ -850,9 +854,10 @@ img {
 
 .input-icon {
   position: absolute;
-  left: 19px;
+  left: 16px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill var(--transition);
 }
 
 .form-input:focus + .input-icon {
@@ -866,29 +871,30 @@ img {
   letter-spacing: 0.04em;
   width: 100%;
   height: 120px;
-  padding-left: 16px;
-  padding-top: 8px;
+  padding: 8px 16px;
   margin-bottom: 16px;
   outline: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  background-color: transparent;
+  transition: border-color var(--transition);
 }
 
-.textarea-label {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
+.textarea:focus {
+  border-color: var(--primary-brand);
+}
+
+.check-div {
+  margin-bottom: 24px;
 }
 
 .check-label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8e8f99;
+  color: var(--suble-text);
   display: flex;
   align-items: center;
-  margin-bottom: 24px;
 }
 
 .check-link {
@@ -901,16 +907,16 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 2px;
   margin-right: 8px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
-  transition: var(--transition);
+  transition: background-color var(--transition);
 }
 
 .input-check:checked + .check-label span {
   background-color: var(--primary-brand);
-  border: 1px solid var(--primary-brand);
+  border: none;
   fill: var(--light);
 }
 
@@ -922,7 +928,7 @@ img {
   justify-content: center;
   letter-spacing: 0.04em;
   color: #ffffff;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   background-color: var(--primary-brand);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -932,4 +938,5 @@ img {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  transition: background-color var(--transition);
 }
