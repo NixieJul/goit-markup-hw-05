@@ -904,7 +904,7 @@ margin-bottom: 16px;
 }
 
 .privacy-span {
-  display: flex;
+  position: relative;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -914,6 +914,12 @@ margin-bottom: 16px;
   justify-content: center;
   fill: transparent;
   transition: background-color var(--transition), border var(--transition), fill var(--transition);
+}
+
+.check-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
 }
 
 .input-check:checked + .check-label span {
