@@ -862,7 +862,7 @@ img {
   fill: var(--primary-brand);
 }
 .text-area {
-margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .textarea {
@@ -895,31 +895,29 @@ margin-bottom: 16px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--suble-text);
-  display: flex;
   align-items: center;
 }
 
 .check-link {
   color: var(--primary-brand);
+  margin-left: 3px;
 }
 
 .privacy-span {
-  position: relative;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   margin-right: 8px;
   align-items: center;
+  display: inline-flex;
   justify-content: center;
   fill: transparent;
-  transition: background-color var(--transition), border var(--transition), fill var(--transition);
+  transition: background-color var(--transition), border var(--transition),
+    fill var(--transition);
 }
 
 .check-icon {
-  position: absolute;
-  top: 50%;
-  transform: translateY(50%);
 }
 
 .input-check:checked + .check-label span {
