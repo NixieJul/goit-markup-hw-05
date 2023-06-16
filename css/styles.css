@@ -811,7 +811,7 @@ img {
 .modal-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 5;
+  line-height: 1,5;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--dark);
@@ -863,6 +863,9 @@ img {
 .form-input:focus + .input-icon {
   fill: var(--primary-brand);
 }
+.text-area {
+margin-bottom: 16px;
+}
 
 .textarea {
   resize: none;
@@ -874,6 +877,7 @@ img {
   padding: 8px 16px;
   margin-bottom: 16px;
   outline: transparent;
+  color: rgba(46, 47, 66, 0.4);
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
@@ -901,21 +905,21 @@ img {
   color: var(--primary-brand);
 }
 
-.check-label span {
+.privacy-span {
   width: 16px;
   height: 16px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   margin-right: 8px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
-  transition: background-color var(--transition);
+  transition: background-color var(--transition), border var(--transition), fill var(--transition);
 }
 
 .input-check:checked + .check-label span {
-  background-color: var(--primary-brand);
+  background-color: var(--pressed-state);
   border: none;
   fill: var(--light);
 }
@@ -934,6 +938,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  cursor: pointer;
   margin-right: 120px;
   display: block;
   margin-right: auto;
